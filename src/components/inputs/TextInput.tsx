@@ -2,11 +2,17 @@ import React, { FormEvent, useState } from "react";
 
 type TextInputProps = {
   label?: string;
+  placeholder?: string;
   inline?: boolean;
   onChange?: (e: FormEvent<HTMLInputElement>) => void;
 };
 
-const TextInput: React.FC<TextInputProps> = ({ onChange, label, inline }) => {
+const TextInput: React.FC<TextInputProps> = ({
+  onChange,
+  label,
+  inline,
+  placeholder,
+}) => {
   const [inlineSet, setInlineSet] = useState(
     typeof inline === "undefined" ? false : true
   );
@@ -17,7 +23,12 @@ const TextInput: React.FC<TextInputProps> = ({ onChange, label, inline }) => {
     return (
       <div className="text-input">
         <label>{label}</label>
-        <input onChange={onChange} type="text" className="form-control" />
+        <input
+          onChange={onChange}
+          placeholder={placeholder}
+          type="text"
+          className="form-control"
+        />
       </div>
     );
   }

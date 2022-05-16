@@ -6,7 +6,7 @@
   row-gap: 1rem;
   background-color: white;
   padding: 1rem 1.5rem;
-  border-radius: 6px;
+  border-radius: 3px;
   width: 350px;
 }
 
@@ -16,5 +16,6 @@
 }
 
 .auth-panel-subtitle {
+  text-align: center;
   color: rgba(0, 0, 0, 0.7);
 }

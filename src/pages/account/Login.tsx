@@ -8,6 +8,7 @@ const Login: React.FC = () => {
       <div className="auth-panel-subtitle">
         Log in to your DocSaga account to manage your documents.
       </div>
+      <TextInput placeholder="Type your email address" label="Email Address" />
       <TextInput label="Email Address" />
     </div>
   );
