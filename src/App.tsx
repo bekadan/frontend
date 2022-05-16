@@ -1,24 +1,15 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
+import SiteFooter from "./components/site/footer/SiteFooter";
+import SiteNavbar from "./components/site/navbar/SiteNavbar";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="site-main-wrapper">
+      <div className="site-navbar-area">
+        <SiteNavbar />
+      </div>
+      <div className="site-main-area">Main</div>
+      <div className="site-footer-area">
+        <SiteFooter />
+      </div>
     </div>
   );
 }
